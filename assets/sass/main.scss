@@ -1,6 +1,10 @@
 // MAIN SASS FILE
 
 @import 'base/reset';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 @import 'themes/theme';
+@import 'pages/home'
 
 // MASTER OVERRIDES BELOW

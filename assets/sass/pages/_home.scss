@@ -1,1 +1,143 @@
 // HOME
+// KOALA
+.box {
+    position: relative;
+    margin: auto;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    display: block;
+    border: solid 4px red;
+}
+
+.head {
+    @include p-left(16.5%, 25%);
+    @include circle(50%, 67%, $lgrey);
+
+    .head-copy {
+        @include circle(100%, 100%, $lgrey);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .ear-left {
+        @include p-left(5%, -20%);
+        @include circle(60%, 65%, $lgrey);
+        z-index: 1;
+    }
+
+    .ear-right {
+        @include p-right(5%, -20%);
+        @include circle(60%, 65%, $lgrey);
+        z-index: 1;
+    }
+
+    .inner-ear {
+        @include p-left(10%, 10%);
+        @include circle(80%, 80%, $dgrey);
+    }
+
+    .eye-left {
+        @include p-left(25%, 21%);
+        @include circle(30%, 33%, white);
+        z-index: 3;
+    }
+
+    .eye-right {
+        @include p-right(25%, 21%);
+        @include circle(30%, 33%, white);
+        z-index: 2;
+    }
+
+    .pupil {
+        @include p-left(35%, 36%);
+        @include circle(28%, 30%, #27354A);
+    }
+
+    .nose {
+        @include p-left(45%, 37%);
+        @include circle(25%, 42.5%, #BE845F);
+        z-index: 4;
+    }
+
+    .hair-left {
+        @include p-left(-8%, 30%);
+        @include polygon(20%, 20%, $lgrey);
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .hair-right{
+        @include p-left(-4%, 48%);
+        @include polygon(20%, 20%, $lgrey);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+}
+
+// ELEPHANT
+
+.elephant-box {
+    position: relative;
+    margin: auto;
+    margin-top: 8%;
+    width: 600px;
+    height: 600px;
+    display: block;
+    border: solid 4px lightslategray;
+}
+
+.e-head {
+    @include p-left(16.5%, 25%);
+    @include circle(55%, 60%, $lpink);
+
+    .e-head-copy {
+        @include circle(100%, 100%, $lpink);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .e-l-ear {
+        @include p-left(2%, -30%);
+        @include circle(60%, 105%, $lpink);
+        z-index: 1;
+        
+        .e-l-inner-ear {
+            @include p-left(10%, 21%);
+            @include circle(80%, 80%, $dpink);
+        }
+    }
+    
+    .e-r-ear {
+        @include p-right(2%, -30%);
+        @include circle(60%, 105%, $lpink);
+        z-index: 1;
+        
+        .e-r-inner-ear {
+            @include p-right(10%, 21%);
+            @include circle(85%, 75%, $dpink);
+        }
+    }
+
+    .e-l-eye {
+        @include p-left(27%, 30%);
+        @include circle(15%, 20%, white);
+        z-index: 3;
+    }
+    .e-r-eye {
+        @include p-right(27%, 30%);
+        @include circle(15%, 20%, white);
+        z-index: 3;
+    }
+
+    .e-pupil {
+        @include p-left(35%, 36%);
+        @include circle(25%, 25%, black);
+    }
+
+    .e-nose {
+        @include p-left(40%, 38%);
+        @include circle(25%, 95%, $lpink, 40px);
+        z-index: 2;
+    }
+}

@@ -1,1 +1,25 @@
 // MIXINS
+
+@mixin p-right($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+@mixin p-left($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin circle($width, $height, $bck: blue, $b-rad: 50%) {
+    width: $width;
+    height: $height;
+    background: $bck;
+    border-radius: $b-rad;
+}
+
+@mixin polygon($width, $height, $bck) {
+    width: $width;
+    height: $height;
+    background: $bck;
+}
