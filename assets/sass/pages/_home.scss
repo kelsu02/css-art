@@ -1,1 +1,81 @@
 // HOME
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 80vh;
+    // background: pink;
+}
+
+.outer-phone {
+    @include p-left(30%, 0%);
+    width: 80%;
+    height: 60%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: 10px;
+    background: $shadow;
+}
+
+.outer-phone-copy {
+    @include p-left(0%, 0%);
+    width: 100%;
+    height: 93%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: 10px;
+    background: $phone;
+}
+
+.dial-back {
+    @include p-left(20%, 25%);
+    @include circle(60%, 50%, $dial);
+}
+.dial-front {
+    @include p-left(5%, 5%);
+    @include circle(90%, 90%, $dpad);
+}
+
+.middle-circle {
+    @include p-left(22%, 22%);
+    @include circle(55%, 55%, $dial);
+}
+
+.dial-circle {
+    @include circle(18%, 18%, $dial);
+}
+
+.dial-circle:nth-child(1) {
+    @include p-left(25%, 77%);
+}
+
+.dial-circle:nth-child(2) {
+    @include p-left(9%, 62%);
+}
+
+.dial-circle:nth-child(3) {
+    @include p-left(2%, 41%);
+}
+.dial-circle:nth-child(4) {
+    @include p-left(9%, 19%);
+}
+.dial-circle:nth-child(5) {
+    @include p-left(25%, 5%);
+}
+.dial-circle:nth-child(6) {
+    @include p-left(46%, 3%);
+}
+.dial-circle:nth-child(7) {
+    @include p-left(65%, 10%);
+}
+.dial-circle:nth-child(8) {
+    @include p-left(77%, 28%);
+}
+.dial-circle:nth-child(9) {
+    @include p-left(78%, 49%);
+}
+.dial-circle:nth-child(10) {
+    @include p-left(69%, 67%);
+}
+
+

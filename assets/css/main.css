@@ -47,4 +47,134 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 80vh;
+}
+
+.outer-phone {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 80%;
+  height: 60%;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  border-radius: 10px;
+  background: #505437;
+}
+
+.outer-phone-copy {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 93%;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  border-radius: 10px;
+  background: #6E734C;
+}
+
+.dial-back {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  height: 60%;
+  width: 50%;
+  background: #DADDC3;
+  border-radius: 50%;
+}
+
+.dial-front {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  background: #1B2B40;
+  border-radius: 50%;
+}
+
+.middle-circle {
+  position: absolute;
+  top: 22%;
+  left: 22%;
+  height: 55%;
+  width: 55%;
+  background: #DADDC3;
+  border-radius: 50%;
+}
+
+.dial-circle {
+  height: 18%;
+  width: 18%;
+  background: #DADDC3;
+  border-radius: 50%;
+}
+
+.dial-circle:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  left: 77%;
+}
+
+.dial-circle:nth-child(2) {
+  position: absolute;
+  top: 9%;
+  left: 62%;
+}
+
+.dial-circle:nth-child(3) {
+  position: absolute;
+  top: 2%;
+  left: 41%;
+}
+
+.dial-circle:nth-child(4) {
+  position: absolute;
+  top: 9%;
+  left: 19%;
+}
+
+.dial-circle:nth-child(5) {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.dial-circle:nth-child(6) {
+  position: absolute;
+  top: 46%;
+  left: 3%;
+}
+
+.dial-circle:nth-child(7) {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+
+.dial-circle:nth-child(8) {
+  position: absolute;
+  top: 77%;
+  left: 28%;
+}
+
+.dial-circle:nth-child(9) {
+  position: absolute;
+  top: 78%;
+  left: 49%;
+}
+
+.dial-circle:nth-child(10) {
+  position: absolute;
+  top: 69%;
+  left: 67%;
+}
 /*# sourceMappingURL=main.css.map */
