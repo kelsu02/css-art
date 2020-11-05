@@ -137,7 +137,19 @@
 
     .e-nose {
         @include p-left(40%, 38%);
-        @include circle(25%, 95%, $lpink, 40px);
+        @include circle(25%, 95%, $gradient, 40px);
         z-index: 2;
+    }
+
+    .l-nose-dot {
+        @include p-left(81%, -.5%);
+        @include circle(45%, 15%, $epink);
+        z-index: 3;  
+    }
+
+    .r-nose-dot {
+        @include r-left(87%, -1%);
+        @include circle(45%, 15%, $epink);
+
     }
 }

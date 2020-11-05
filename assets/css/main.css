@@ -194,14 +194,14 @@ body {
   left: 25%;
   width: 55%;
   height: 60%;
-  background: pink;
+  background: #fa96cb;
   border-radius: 50%;
 }
 
 .e-head .e-head-copy {
   width: 100%;
   height: 100%;
-  background: pink;
+  background: #fa96cb;
   border-radius: 50%;
   position: absolute;
   z-index: 2;
@@ -213,7 +213,7 @@ body {
   left: -30%;
   width: 60%;
   height: 105%;
-  background: pink;
+  background: #fa96cb;
   border-radius: 50%;
   z-index: 1;
 }
@@ -224,7 +224,7 @@ body {
   left: 21%;
   width: 80%;
   height: 80%;
-  background: palevioletred;
+  background: #ef017c;
   border-radius: 50%;
 }
 
@@ -234,7 +234,7 @@ body {
   right: -30%;
   width: 60%;
   height: 105%;
-  background: pink;
+  background: #fa96cb;
   border-radius: 50%;
   z-index: 1;
 }
@@ -245,7 +245,7 @@ body {
   right: 21%;
   width: 85%;
   height: 75%;
-  background: palevioletred;
+  background: #ef017c;
   border-radius: 50%;
 }
 
@@ -287,8 +287,20 @@ body {
   left: 38%;
   width: 25%;
   height: 95%;
-  background: pink;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa96cb), to(#e24d9a));
+  background: linear-gradient(#fa96cb 0%, #e24d9a 100%);
   border-radius: 40px;
   z-index: 2;
+}
+
+.e-head .l-nose-dot {
+  position: absolute;
+  top: 81%;
+  left: -0.5%;
+  width: 45%;
+  height: 15%;
+  background: #e24d9a;
+  border-radius: 50%;
+  z-index: 3;
 }
 /*# sourceMappingURL=main.css.map */
